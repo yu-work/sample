@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "cli-db-app"
+version = "0.1.0"
+description = "CLI application to display database records"
+authors = ["Yu"]
+readme = "README.md"
+packages = [{include = "cli_db_app"}]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+typer = "^0.15.1"
+sqlalchemy = "^2.0.38"
+rich = "^13.9.4"
+sqlalchemy-utils = "^0.41.2"
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+screen-cli = "cli_db_app.commands.cli:run"
