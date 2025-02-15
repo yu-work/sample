@@ -1,0 +1,11 @@
+{
+    "name": "sample/php-demo",
+    "autoload": {
+        "psr-4": {
+            "Sample\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.1"
+    }
+}
