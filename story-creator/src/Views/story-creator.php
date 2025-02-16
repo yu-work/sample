@@ -13,11 +13,12 @@ $scene = new Scene();
     <title>ストーリー作成</title>
     <style>
         :root {
-            --primary-color: #3498db;
-            --secondary-color: #2ecc71;
-            --background-color: #f5f6fa;
-            --text-color: #2c3e50;
+            --primary-color: #333333;
+            --secondary-color: #666666;
+            --background-color: #f5f5f5;
+            --text-color: #222222;
             --border-radius: 8px;
+            --hover-color: #444444;
         }
         
         body {
@@ -63,17 +64,20 @@ $scene = new Scene();
             cursor: pointer;
             transition: all 0.3s ease;
             font-weight: 500;
+            letter-spacing: 0.5px;
         }
 
         .selection-item:hover {
-            background-color: var(--primary-color);
+            background-color: var(--hover-color);
             color: white;
             transform: translateY(-2px);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
         }
 
         .selection-item.selected {
             background-color: var(--primary-color);
             color: white;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
         }
 
         #story-output {
