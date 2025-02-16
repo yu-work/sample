@@ -9,7 +9,7 @@ require_once __DIR__ . '/../../vendor/autoload.php';
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
     <style>
         .content-box {
-            height: 200vh;
+            min-height: 300vh;
             background: linear-gradient(to bottom, var(--bs-light), var(--bs-white));
             padding: 20px;
         }
@@ -27,11 +27,19 @@ require_once __DIR__ . '/../../vendor/autoload.php';
             background-color: #FFE5E5;
             border: none;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            opacity: 0.7;
         }
 
         .scroll-button:hover {
             transform: translateY(-2px);
             box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            opacity: 1;
+            background-color: #FFB3B3;
+        }
+
+        .scroll-button:active {
+            transform: translateY(0);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
 
         .scroll-up {
@@ -71,10 +79,16 @@ require_once __DIR__ . '/../../vendor/autoload.php';
         </button>
 
         <div class="section">
-            セクション 1
+            セクション 1<br>
+            <small class="text-muted">スクロールしてください</small>
         </div>
         <div class="section">
-            セクション 2
+            セクション 2<br>
+            <small class="text-muted">さらにスクロールしてください</small>
+        </div>
+        <div class="section">
+            セクション 3<br>
+            <small class="text-muted">最後のセクションです</small>
         </div>
     </div>
 
