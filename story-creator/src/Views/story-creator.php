@@ -11,6 +11,7 @@ $scene = new Scene();
 <html>
 <head>
     <title>ストーリー作成</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         :root {
             --primary-color: #333333;
@@ -100,40 +101,62 @@ $scene = new Scene();
     </style>
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
+        <div class="container">
+            <a class="navbar-brand" href="#">ストーリー作成</a>
+        </div>
+    </nav>
+
     <div class="container">
-        <h1>ストーリー作成</h1>
-        
-        <div class="selection-group">
-            <h2>キャラクターの種類</h2>
-            <?php foreach (CharacterType::TYPES as $key => $label): ?>
-                <div class="selection-item" data-character-type="<?php echo htmlspecialchars($key); ?>">
-                    <?php echo htmlspecialchars($label); ?>
+        <div class="row mb-4">
+            <div class="col">
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="card-title mb-0">ボタンのスタイル例</h5>
+                    </div>
+                    <div class="card-body">
+                        <button class="btn btn-primary me-2 mb-2">プライマリーボタン</button>
+                        <button class="btn btn-secondary me-2 mb-2">セカンダリーボタン</button>
+                        <button class="btn btn-success me-2 mb-2">サクセスボタン</button>
+                        <button class="btn btn-danger me-2 mb-2">デンジャーボタン</button>
+                        <button class="btn btn-warning me-2 mb-2">ワーニングボタン</button>
+                        <button class="btn btn-info me-2 mb-2">インフォボタン</button>
+                    </div>
                 </div>
-            <?php endforeach; ?>
+            </div>
         </div>
 
-        <div class="selection-group">
-            <h2>キャラクターの心情</h2>
-            <?php foreach (Character::EMOTIONS as $key => $label): ?>
-                <div class="selection-item" data-emotion="<?php echo htmlspecialchars($key); ?>">
-                    <?php echo htmlspecialchars($label); ?>
+        <div class="row mb-4">
+            <div class="col">
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="card-title mb-0">アウトラインボタン</h5>
+                    </div>
+                    <div class="card-body">
+                        <button class="btn btn-outline-primary me-2 mb-2">プライマリー</button>
+                        <button class="btn btn-outline-secondary me-2 mb-2">セカンダリー</button>
+                        <button class="btn btn-outline-success me-2 mb-2">サクセス</button>
+                        <button class="btn btn-outline-danger me-2 mb-2">デンジャー</button>
+                    </div>
                 </div>
-            <?php endforeach; ?>
+            </div>
         </div>
 
-        <div class="selection-group">
-            <h2>シーンの種類</h2>
-            <?php foreach (Scene::TYPES as $key => $label): ?>
-                <div class="selection-item" data-scene="<?php echo htmlspecialchars($key); ?>">
-                    <?php echo htmlspecialchars($label); ?>
+        <div class="row mb-4">
+            <div class="col">
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="card-title mb-0">サイズバリエーション</h5>
+                    </div>
+                    <div class="card-body">
+                        <button class="btn btn-primary btn-lg me-2 mb-2">大きいボタン</button>
+                        <button class="btn btn-primary me-2 mb-2">通常ボタン</button>
+                        <button class="btn btn-primary btn-sm me-2 mb-2">小さいボタン</button>
+                    </div>
                 </div>
-            <?php endforeach; ?>
+            </div>
         </div>
-
-        <div id="story-output">
-            <h2>生成されたストーリー</h2>
-            <div id="story-text"></div>
-        </div>
+    </div>
     </div>
 
     <script>
@@ -191,5 +214,6 @@ $scene = new Scene();
             }
         });
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
