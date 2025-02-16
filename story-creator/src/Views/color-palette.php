@@ -40,6 +40,38 @@ require_once __DIR__ . '/../../vendor/autoload.php';
             </div>
         </div>
 
+        <h2 class="mb-4 mt-5">パステルカラー</h2>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="color-box" style="background-color: #FFB3B3; color: black;">#FFB3B3 - パステルピンク</div>
+            </div>
+            <div class="col-md-3">
+                <div class="color-box" style="background-color: #B3E0FF; color: black;">#B3E0FF - パステルブルー</div>
+            </div>
+            <div class="col-md-3">
+                <div class="color-box" style="background-color: #B3FFB3; color: black;">#B3FFB3 - パステルグリーン</div>
+            </div>
+            <div class="col-md-3">
+                <div class="color-box" style="background-color: #FFE6B3; color: black;">#FFE6B3 - パステルオレンジ</div>
+            </div>
+        </div>
+
+        <h2 class="mb-4 mt-5">中間色</h2>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="color-box" style="background-color: #9370DB;">#9370DB - ミディアムパープル</div>
+            </div>
+            <div class="col-md-3">
+                <div class="color-box" style="background-color: #20B2AA;">#20B2AA - ライトシーグリーン</div>
+            </div>
+            <div class="col-md-3">
+                <div class="color-box" style="background-color: #DEB887; color: black;">#DEB887 - バーリーウッド</div>
+            </div>
+            <div class="col-md-3">
+                <div class="color-box" style="background-color: #BA55D3;">#BA55D3 - ミディアムオーキッド</div>
+            </div>
+        </div>
+
         <h2 class="mb-4 mt-5">アクセントカラー</h2>
         <div class="row">
             <div class="col-md-3">
