@@ -1,6 +1,13 @@
 <?php
+session_start();
 require_once __DIR__ . '/../../vendor/autoload.php';
 use App\Auth\GoogleAuth;
+
+// ユーザーが既にログインしている場合はリダイレクト
+if (isset($_SESSION['user'])) {
+    header('Location: /index.php');
+    exit;
+}
 
 $auth = new GoogleAuth();
 $authUrl = $auth->getAuthUrl();
