@@ -43,47 +43,47 @@ require_once __DIR__ . '/../../vendor/autoload.php';
         <h2 class="mb-4 mt-5">パステルカラー</h2>
         <div class="row">
             <div class="col-md-3">
-                <div class="color-box" style="background-color: #FFB3B3; color: black;">#FFB3B3 - パステルピンク</div>
+                <div class="color-box" style="background-color: #FFE5E5; color: black;">#FFE5E5 - ライトピンク</div>
             </div>
             <div class="col-md-3">
-                <div class="color-box" style="background-color: #B3E0FF; color: black;">#B3E0FF - パステルブルー</div>
+                <div class="color-box" style="background-color: #E5F2FF; color: black;">#E5F2FF - ライトブルー</div>
             </div>
             <div class="col-md-3">
-                <div class="color-box" style="background-color: #B3FFB3; color: black;">#B3FFB3 - パステルグリーン</div>
+                <div class="color-box" style="background-color: #E5FFE5; color: black;">#E5FFE5 - ライトグリーン</div>
             </div>
             <div class="col-md-3">
-                <div class="color-box" style="background-color: #FFE6B3; color: black;">#FFE6B3 - パステルオレンジ</div>
+                <div class="color-box" style="background-color: #FFF2E5; color: black;">#FFF2E5 - ライトオレンジ</div>
             </div>
         </div>
 
         <div class="row">
             <div class="col-md-3">
-                <div class="color-box" style="background-color: #E6B3FF; color: black;">#E6B3FF - パステルパープル</div>
+                <div class="color-box" style="background-color: #F2E5FF; color: black;">#F2E5FF - ライトパープル</div>
             </div>
             <div class="col-md-3">
-                <div class="color-box" style="background-color: #B3FFE6; color: black;">#B3FFE6 - パステルミント</div>
+                <div class="color-box" style="background-color: #E5FFF2; color: black;">#E5FFF2 - ライトミント</div>
             </div>
             <div class="col-md-3">
-                <div class="color-box" style="background-color: #FFB3E6; color: black;">#FFB3E6 - パステルローズ</div>
+                <div class="color-box" style="background-color: #FFE5F2; color: black;">#FFE5F2 - ライトローズ</div>
             </div>
             <div class="col-md-3">
-                <div class="color-box" style="background-color: #E6FFB3; color: black;">#E6FFB3 - パステルライム</div>
+                <div class="color-box" style="background-color: #F2FFE5; color: black;">#F2FFE5 - ライトライム</div>
             </div>
         </div>
 
-        <h2 class="mb-4 mt-5">アースカラー</h2>
+        <h2 class="mb-4 mt-5">ソフトアースカラー</h2>
         <div class="row">
             <div class="col-md-3">
-                <div class="color-box" style="background-color: #8B4513;">#8B4513 - サドルブラウン</div>
+                <div class="color-box" style="background-color: #D4B8AA; color: black;">#D4B8AA - ソフトブラウン</div>
             </div>
             <div class="col-md-3">
-                <div class="color-box" style="background-color: #556B2F;">#556B2F - ダークオリーブグリーン</div>
+                <div class="color-box" style="background-color: #B8C4A8; color: black;">#B8C4A8 - ソフトオリーブ</div>
             </div>
             <div class="col-md-3">
-                <div class="color-box" style="background-color: #CD853F;">#CD853F - ペルー</div>
+                <div class="color-box" style="background-color: #E6C9A8; color: black;">#E6C9A8 - ソフトベージュ</div>
             </div>
             <div class="col-md-3">
-                <div class="color-box" style="background-color: #8FBC8F;">#8FBC8F - ダークシーグリーン</div>
+                <div class="color-box" style="background-color: #C1D9C1; color: black;">#C1D9C1 - ソフトセージ</div>
             </div>
         </div>
 
