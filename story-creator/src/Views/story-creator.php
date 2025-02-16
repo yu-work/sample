@@ -104,6 +104,15 @@ $scene = new Scene();
         <h1>ストーリー作成</h1>
         
         <div class="selection-group">
+            <h2>キャラクターの種類</h2>
+            <?php foreach (CharacterType::TYPES as $key => $label): ?>
+                <div class="selection-item" data-character-type="<?php echo htmlspecialchars($key); ?>">
+                    <?php echo htmlspecialchars($label); ?>
+                </div>
+            <?php endforeach; ?>
+        </div>
+
+        <div class="selection-group">
             <h2>キャラクターの心情</h2>
             <?php foreach (Character::EMOTIONS as $key => $label): ?>
                 <div class="selection-item" data-emotion="<?php echo htmlspecialchars($key); ?>">
@@ -129,8 +138,21 @@ $scene = new Scene();
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
+            let selectedCharacterType = null;
             let selectedEmotion = null;
             let selectedScene = null;
+
+            // キャラクターの種類選択
+            document.querySelectorAll('[data-character-type]').forEach(item => {
+                item.addEventListener('click', function() {
+                    // Remove selected class from all character type items
+                    document.querySelectorAll('[data-character-type]').forEach(el => el.classList.remove('selected'));
+                    // Add selected class to clicked item
+                    this.classList.add('selected');
+                    selectedCharacterType = this.dataset.characterType;
+                    updateStory();
+                });
+            });
 
             // 心情の選択
             document.querySelectorAll('[data-emotion]').forEach(item => {
@@ -158,11 +180,12 @@ $scene = new Scene();
 
             // ストーリーの更新
             function updateStory() {
-                if (selectedEmotion && selectedScene) {
+                if (selectedCharacterType && selectedEmotion && selectedScene) {
+                    const characterTypes = <?php echo json_encode(CharacterType::TYPES); ?>;
                     const emotions = <?php echo json_encode(Character::EMOTIONS); ?>;
                     const scenes = <?php echo json_encode(Scene::TYPES); ?>;
                     
-                    const storyText = `${scenes[selectedScene]}で${emotions[selectedEmotion]}の感情を抱いているキャラクター...`;
+                    const storyText = `${scenes[selectedScene]}で${emotions[selectedEmotion]}の感情を抱いている${characterTypes[selectedCharacterType]}のキャラクター...`;
                     document.getElementById('story-text').textContent = storyText;
                 }
             }
