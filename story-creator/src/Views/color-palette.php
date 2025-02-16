@@ -56,6 +56,37 @@ require_once __DIR__ . '/../../vendor/autoload.php';
             </div>
         </div>
 
+        <div class="row">
+            <div class="col-md-3">
+                <div class="color-box" style="background-color: #E6B3FF; color: black;">#E6B3FF - パステルパープル</div>
+            </div>
+            <div class="col-md-3">
+                <div class="color-box" style="background-color: #B3FFE6; color: black;">#B3FFE6 - パステルミント</div>
+            </div>
+            <div class="col-md-3">
+                <div class="color-box" style="background-color: #FFB3E6; color: black;">#FFB3E6 - パステルローズ</div>
+            </div>
+            <div class="col-md-3">
+                <div class="color-box" style="background-color: #E6FFB3; color: black;">#E6FFB3 - パステルライム</div>
+            </div>
+        </div>
+
+        <h2 class="mb-4 mt-5">アースカラー</h2>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="color-box" style="background-color: #8B4513;">#8B4513 - サドルブラウン</div>
+            </div>
+            <div class="col-md-3">
+                <div class="color-box" style="background-color: #556B2F;">#556B2F - ダークオリーブグリーン</div>
+            </div>
+            <div class="col-md-3">
+                <div class="color-box" style="background-color: #CD853F;">#CD853F - ペルー</div>
+            </div>
+            <div class="col-md-3">
+                <div class="color-box" style="background-color: #8FBC8F;">#8FBC8F - ダークシーグリーン</div>
+            </div>
+        </div>
+
         <h2 class="mb-4 mt-5">中間色</h2>
         <div class="row">
             <div class="col-md-3">
@@ -69,6 +100,22 @@ require_once __DIR__ . '/../../vendor/autoload.php';
             </div>
             <div class="col-md-3">
                 <div class="color-box" style="background-color: #BA55D3;">#BA55D3 - ミディアムオーキッド</div>
+            </div>
+        </div>
+
+        <h2 class="mb-4 mt-5">ビビッドカラー</h2>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="color-box" style="background-color: #FF1493;">#FF1493 - ディープピンク</div>
+            </div>
+            <div class="col-md-3">
+                <div class="color-box" style="background-color: #00FF00;">#00FF00 - ライム</div>
+            </div>
+            <div class="col-md-3">
+                <div class="color-box" style="background-color: #FF4500;">#FF4500 - オレンジレッド</div>
+            </div>
+            <div class="col-md-3">
+                <div class="color-box" style="background-color: #4169E1;">#4169E1 - ロイヤルブルー</div>
             </div>
         </div>
 
